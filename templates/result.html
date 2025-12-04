@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+        .box {
+            margin: 80px auto;
+            width: 40%;
+            padding: 40px;
+            background: #1a1a1a;
+            border-radius: 15px;
+            box-shadow: 0 0 20px black;
+        }
+        .placed {
+            color: #00ff99;
+            font-size: 28px;
+        }
+        .not-placed {
+            color: #ff5050;
+            font-size: 28px;
+        }
+        a {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    {% if prediction == 1 %}
+        <h2 class="placed">🎉 The Student is Placed!</h2>
+    {% else %}
+        <h2 class="not-placed">❌ The Student is Not Placed</h2>
+    {% endif %}
+
+    <br><br>
+    <a href="/">Go Back</a>
+</div>
+
+</body>
+</html>
